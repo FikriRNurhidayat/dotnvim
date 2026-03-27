@@ -6,7 +6,10 @@ colorscheme quiet
 highlight Normal guibg=none ctermbg=none
 highlight NonText guibg=none ctermbg=none
 highlight WinSeparator guibg=none guifg=none
-highlight link String DiagnosticWarn
+highlight! link IncSearch TermCursor 
+highlight! link Visual TermCursor 
+highlight! link StatusLine NonText
+highlight! link StatusLineNC NonText
 
 set tabstop=2
 set shiftwidth=2
@@ -15,21 +18,21 @@ set nohlsearch
 set nowrap
 
 set shortmess+=I
-set laststatus=0
-set statusline=
+set laststatus=2
+set statusline=%f
 set fillchars+=vert:\ ,stl:\ 
 set fillchars+=eob:\ 
 set fillchars+=horiz:─,horizup:─,horizdown:─
 set showtabline=0
 
-let &statusline='%#Normal# '
+" let &statusline='%#Normal# '
 let g:netrw_banner = 0
 
 set tags=~/.cache/tags,tags
 
 nnoremap <leader>e :Ex<CR>
 
-autocmd FileType typescript,typescriptreact compiler bypescript
+autocmd FileType typescript,typescriptreact compiler typescript
 autocmd FileType dart compiler dart
 
 " Quickfix
