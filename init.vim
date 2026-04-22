@@ -1,15 +1,15 @@
 let mapleader = " "
 luafile $HOME/.config/nvim/lazy.lua
 
-colorscheme quiet
+colorscheme monochrome
 
-highlight Normal guibg=none ctermbg=none
-highlight NonText guibg=none ctermbg=none
-highlight WinSeparator guibg=none guifg=none
-highlight! link IncSearch TermCursor 
-highlight! link Visual TermCursor 
-highlight! link StatusLine NonText
-highlight! link StatusLineNC NonText
+" highlight Normal guibg=none ctermbg=none
+" highlight NonText guibg=none ctermbg=none
+" highlight WinSeparator guibg=none guifg=none
+" highlight! link IncSearch TermCursor 
+" highlight! link Visual TermCursor 
+" highlight! link StatusLine NonText
+" highlight! link StatusLineNC NonText
 
 set tabstop=2
 set shiftwidth=2
